@@ -1,1 +1,7 @@
-// Js commit 3 on Tue Feb 25 17:16:44 UTC 2025
+// Generate and sort random numbers
+function generateRandomArray(size) {
+    let arr = Array.from({ length: size }, () => Math.floor(Math.random() * 100));
+    return arr.sort((a, b) => a - b);
+}
+
+console.log("Sorted Random Array:", generateRandomArray(10));
