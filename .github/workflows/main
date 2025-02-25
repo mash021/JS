@@ -1,15 +1,15 @@
-name: Test 13 Commits with JS Files
+name: Automated 13 Commits
 
 on:
-  workflow_dispatch:
+  workflow_dispatch: # قابلیت اجرای دستی
 
 jobs:
-  commit-test:
+  commit-job:
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           token: ${{ secrets.PAT_TOKEN }}
 
@@ -22,10 +22,10 @@ jobs:
         run: |
           for i in {1..13}; do
             filename="script-$(date +%Y%m%d-%H%M%S).js"
-            echo "// This is an automated file: Commit $i on $(date)" > $filename
+            echo "// Js commit $i on $(date)" > $filename
             git add $filename
-            git commit -m "Automated commit $i - Added $filename"
+            git commit -m "java script commit $i - Added $filename"
             git push https://x-access-token:${{ secrets.PAT_TOKEN }}@github.com/mash021/JS.git
             echo "Waiting for 5 minutes before next commit..."
-            sleep 300
+            sleep 30
           done
