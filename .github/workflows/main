@@ -11,7 +11,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.PAT_TOKEN }}
 
       - name: Set up Git
         run: |
@@ -25,7 +25,7 @@ jobs:
             echo "// This is an automated file: Commit $i on $(date)" > $filename
             git add $filename
             git commit -m "Automated commit $i - Added $filename"
-            git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/mash021/JS.git
+            git push https://x-access-token:${{ secrets.PAT_TOKEN }}@github.com/mash021/JS.git
             echo "Waiting for 5 minutes before next commit..."
             sleep 300
           done
