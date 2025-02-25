@@ -1,36 +1,31 @@
-# This is a basic workflow to help you get started with Actions
+name: Test 13 Commits with JS Files
 
-name: CI
-
-# Controls when the workflow will run
 on:
-  # Triggers the workflow on push or pull request events but only for the "main" branch
-  push:
-    branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
-
-  # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
-# A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  # This workflow contains a single job called "build"
-  build:
-    # The type of runner that the job will run on
+  commit-test:
     runs-on: ubuntu-latest
 
-    # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v4
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
 
-      # Runs a single command using the runners shell
-      - name: Run a one-line script
-        run: echo Hello, world!
-
-      # Runs a set of commands using the runners shell
-      - name: Run a multi-line script
+      - name: Set up Git
         run: |
-          echo Add other actions to build,
-          echo test, and deploy your project.
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Make multiple commits with JS files
+        run: |
+          for i in {1..13}; do
+            filename="script-$(date +%Y%m%d-%H%M%S).js"
+            echo "// This is an automated file: Commit $i on $(date)" > $filename
+            git add $filename
+            git commit -m "Automated commit $i - Added $filename"
+            git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/mash021/JS.git
+            echo "Waiting for 5 minutes before next commit..."
+            sleep 300
+          done
