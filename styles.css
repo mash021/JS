@@ -1,0 +1,1004 @@
+/* Line 1 */
+body {
+    margin: 0;
+}
+
+/* Line 2 */
+body {
+    padding: 0;
+}
+
+/* Line 3 */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Line 4 */
+h1 {
+    color: #333;
+}
+
+/* Line 5 */
+h2 {
+    color: #666;
+}
+
+/* Line 6 */
+h3 {
+    color: #999;
+}
+
+/* Line 7 */
+p {
+    line-height: 1.5;
+}
+
+/* Line 8 */
+a {
+    text-decoration: none;
+}
+
+/* Line 9 */
+a:hover {
+    text-decoration: underline;
+}
+
+/* Line 10 */
+ul {
+    list-style-type: none;
+}
+
+/* Line 11 */
+li {
+    margin-bottom: 10px;
+}
+
+/* Line 12 */
+.container {
+    width: 80%;
+}
+
+/* Line 13 */
+.container {
+    margin: 0 auto;
+}
+
+/* Line 14 */
+.header {
+    background-color: #f8f8f8;
+}
+
+/* Line 15 */
+.header {
+    padding: 20px;
+}
+
+/* Line 16 */
+.header {
+    text-align: center;
+}
+
+/* Line 17 */
+.navbar {
+    background-color: #333;
+}
+
+/* Line 18 */
+.navbar {
+    overflow: hidden;
+}
+
+/* Line 19 */
+.navbar a {
+    float: left;
+}
+
+/* Line 20 */
+.navbar a {
+    display: block;
+}
+
+/* Line 21 */
+.navbar a {
+    color: #f2f2f2;
+}
+
+/* Line 22 */
+.navbar a {
+    text-align: center;
+}
+
+/* Line 23 */
+.navbar a {
+    padding: 14px 16px;
+}
+
+/* Line 24 */
+.navbar a {
+    text-decoration: none;
+}
+
+/* Line 25 */
+.navbar a:hover {
+    background-color: #ddd;
+}
+
+/* Line 26 */
+.navbar a:hover {
+    color: black;
+}
+
+/* Line 27 */
+.main {
+    padding: 20px;
+}
+
+/* Line 28 */
+.footer {
+    background-color: #f1f1f1;
+}
+
+/* Line 29 */
+.footer {
+    text-align: center;
+}
+
+/* Line 30 */
+.footer {
+    padding: 10px;
+}
+
+/* Line 31 */
+.button {
+    background-color: #4CAF50;
+}
+
+/* Line 32 */
+.button {
+    border: none;
+}
+
+/* Line 33 */
+.button {
+    color: white;
+}
+
+/* Line 34 */
+.button {
+    padding: 15px 32px;
+}
+
+/* Line 35 */
+.button {
+    text-align: center;
+}
+
+/* Line 36 */
+.button {
+    text-decoration: none;
+}
+
+/* Line 37 */
+.button {
+    display: inline-block;
+}
+
+/* Line 38 */
+.button {
+    font-size: 16px;
+}
+
+/* Line 39 */
+.button:hover {
+    background-color: #45a049;
+}
+
+/* Line 40 */
+.input {
+    width: 100%;
+}
+
+/* Line 41 */
+.input {
+    padding: 12px 20px;
+}
+
+/* Line 42 */
+.input {
+    margin: 8px 0;
+}
+
+/* Line 43 */
+.input {
+    display: inline-block;
+}
+
+/* Line 44 */
+.input {
+    border: 1px solid #ccc;
+}
+
+/* Line 45 */
+.input {
+    border-radius: 4px;
+}
+
+/* Line 46 */
+.input:focus {
+    border-color: #4CAF50;
+}
+
+/* Line 47 */
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+/* Line 48 */
+.card {
+    transition: 0.3s;
+}
+
+/* Line 49 */
+.card {
+    width: 40%;
+}
+
+/* Line 50 */
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+/* Line 51 */
+.card-container {
+    padding: 2px 16px;
+}
+
+/* Line 52 */
+.grid-container {
+    display: grid;
+}
+
+/* Line 53 */
+.grid-container {
+    grid-template-columns: auto auto auto;
+}
+
+/* Line 54 */
+.grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+/* Line 55 */
+.grid-item {
+    border: 1px solid rgba(0, 0, 0, 0.8);
+}
+
+/* Line 56 */
+.grid-item {
+    padding: 20px;
+}
+
+/* Line 57 */
+.grid-item {
+    font-size: 30px;
+}
+
+/* Line 58 */
+.grid-item {
+    text-align: center;
+}
+
+/* Line 59 */
+.table {
+    font-family: Arial, sans-serif;
+}
+
+/* Line 60 */
+.table {
+    border-collapse: collapse;
+}
+
+/* Line 61 */
+.table {
+    width: 100%;
+}
+
+/* Line 62 */
+.table td, .table th {
+    border: 1px solid #ddd;
+}
+
+/* Line 63 */
+.table td, .table th {
+    padding: 8px;
+}
+
+/* Line 64 */
+.table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Line 65 */
+.table tr:hover {
+    background-color: #ddd;
+}
+
+/* Line 66 */
+.table th {
+    padding-top: 12px;
+}
+
+/* Line 67 */
+.table th {
+    padding-bottom: 12px;
+}
+
+/* Line 68 */
+.table th {
+    text-align: left;
+}
+
+/* Line 69 */
+.table th {
+    background-color: #4CAF50;
+}
+
+/* Line 70 */
+.table th {
+    color: white;
+}
+
+/* Line 71 */
+.alert {
+    padding: 20px;
+}
+
+/* Line 72 */
+.alert {
+    background-color: #f44336;
+}
+
+/* Line 73 */
+.alert {
+    color: white;
+}
+
+/* Line 74 */
+.alert {
+    margin-bottom: 15px;
+}
+
+/* Line 75 */
+.closebtn {
+    margin-left: 15px;
+}
+
+/* Line 76 */
+.closebtn {
+    color: white;
+}
+
+/* Line 77 */
+.closebtn {
+    font-weight: bold;
+}
+
+/* Line 78 */
+.closebtn {
+    float: right;
+}
+
+/* Line 79 */
+.closebtn {
+    font-size: 22px;
+}
+
+/* Line 80 */
+.closebtn {
+    line-height: 20px;
+}
+
+/* Line 81 */
+.closebtn:hover {
+    color: black;
+}
+
+/* Line 82 */
+.progress {
+    width: 100%;
+}
+
+/* Line 83 */
+.progress {
+    background-color: #f3f3f3;
+}
+
+/* Line 84 */
+.progress-bar {
+    width: 1%;
+}
+
+/* Line 85 */
+.progress-bar {
+    height: 30px;
+}
+
+/* Line 86 */
+.progress-bar {
+    background-color: #4CAF50;
+}
+
+/* Line 87 */
+.tooltip {
+    position: relative;
+}
+
+/* Line 88 */
+.tooltip .tooltiptext {
+    visibility: hidden;
+}
+
+/* Line 89 */
+.tooltip .tooltiptext {
+    width: 120px;
+}
+
+/* Line 90 */
+.tooltip .tooltiptext {
+    background-color: black;
+}
+
+/* Line 91 */
+.tooltip .tooltiptext {
+    color: #fff;
+}
+
+/* Line 92 */
+.tooltip .tooltiptext {
+    text-align: center;
+}
+
+/* Line 93 */
+.tooltip .tooltiptext {
+    border-radius: 6px;
+}
+
+/* Line 94 */
+.tooltip .tooltiptext {
+    padding: 5px 0;
+}
+
+/* Line 95 */
+.tooltip .tooltiptext {
+    position: absolute;
+}
+
+/* Line 96 */
+.tooltip .tooltiptext {
+    z-index: 1;
+}
+
+/* Line 97 */
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+/* Line 98 */
+.modal {
+    display: none;
+}
+
+/* Line 99 */
+.modal {
+    position: fixed;
+}
+
+/* Line 100 */
+.modal {
+    z-index: 1;
+}
+
+/* Line 101 */
+.modal {
+    left: 0;
+}
+
+/* Line 102 */
+.modal {
+    top: 0;
+}
+
+/* Line 103 */
+.modal {
+    width: 100%;
+}
+
+/* Line 104 */
+.modal {
+    height: 100%;
+}
+
+/* Line 105 */
+.modal {
+    overflow: auto;
+}
+
+/* Line 106 */
+.modal {
+    background-color: rgb(0,0,0);
+}
+
+/* Line 107 */
+.modal {
+    background-color: rgba(0,0,0,0.4);
+}
+
+/* Line 108 */
+.modal-content {
+    background-color: #fefefe;
+}
+
+/* Line 109 */
+.modal-content {
+    margin: 15% auto;
+}
+
+/* Line 110 */
+.modal-content {
+    padding: 20px;
+}
+
+/* Line 111 */
+.modal-content {
+    border: 1px solid #888;
+}
+
+/* Line 112 */
+.modal-content {
+    width: 80%;
+}
+
+/* Line 113 */
+.close {
+    color: #aaa;
+}
+
+/* Line 114 */
+.close {
+    float: right;
+}
+
+/* Line 115 */
+.close {
+    font-size: 28px;
+}
+
+/* Line 116 */
+.close {
+    font-weight: bold;
+}
+
+/* Line 117 */
+.close:hover,
+.close:focus {
+    color: black;
+}
+
+/* Line 118 */
+.close:hover,
+.close:focus {
+    text-decoration: none;
+}
+
+/* Line 119 */
+.close:hover,
+.close:focus {
+    cursor: pointer;
+}
+
+/* Line 120 */
+.accordion {
+    background-color: #eee;
+}
+
+/* Line 121 */
+.accordion {
+    color: #444;
+}
+
+/* Line 122 */
+.accordion {
+    cursor: pointer;
+}
+
+/* Line 123 */
+.accordion {
+    padding: 18px;
+}
+
+/* Line 124 */
+.accordion {
+    width: 100%;
+}
+
+/* Line 125 */
+.accordion {
+    border: none;
+}
+
+/* Line 126 */
+.accordion {
+    text-align: left;
+}
+
+/* Line 127 */
+.accordion {
+    outline: none;
+}
+
+/* Line 128 */
+.accordion {
+    transition: 0.4s;
+}
+
+/* Line 129 */
+.active,
+.accordion:hover {
+    background-color: #ccc;
+}
+
+/* Line 130 */
+.panel {
+    padding: 0 18px;
+}
+
+/* Line 131 */
+.panel {
+    background-color: white;
+}
+
+/* Line 132 */
+.panel {
+    max-height: 0;
+}
+
+/* Line 133 */
+.panel {
+    overflow: hidden;
+}
+
+/* Line 134 */
+.panel {
+    transition: max-height 0.2s ease-out;
+}
+
+/* Line 135 */
+.tab {
+    overflow: hidden;
+}
+
+/* Line 136 */
+.tab {
+    border: 1px solid #ccc;
+}
+
+/* Line 137 */
+.tab {
+    background-color: #f1f1f1;
+}
+
+/* Line 138 */
+.tab button {
+    background-color: inherit;
+}
+
+/* Line 139 */
+.tab button {
+    float: left;
+}
+
+/* Line 140 */
+.tab button {
+    border: none;
+}
+
+/* Line 141 */
+.tab button {
+    outline: none;
+}
+
+/* Line 142 */
+.tab button {
+    cursor: pointer;
+}
+
+/* Line 143 */
+.tab button {
+    padding: 14px 16px;
+}
+
+/* Line 144 */
+.tab button {
+    transition: 0.3s;
+}
+
+/* Line 145 */
+.tab button:hover {
+    background-color: #ddd;
+}
+
+/* Line 146 */
+.tab button.active {
+    background-color: #ccc;
+}
+
+/* Line 147 */
+.tabcontent {
+    display: none;
+}
+
+/* Line 148 */
+.tabcontent {
+    padding: 6px 12px;
+}
+
+/* Line 149 */
+.tabcontent {
+    border: 1px solid #ccc;
+}
+
+/* Line 150 */
+.tabcontent {
+    border-top: none;
+}
+
+/* Line 151 */
+.loader {
+    border: 16px solid #f3f3f3;
+}
+
+/* Line 152 */
+.loader {
+    border-radius: 50%;
+}
+
+/* Line 153 */
+.loader {
+    border-top: 16px solid #3498db;
+}
+
+/* Line 154 */
+.loader {
+    width: 120px;
+}
+
+/* Line 155 */
+.loader {
+    height: 120px;
+}
+
+/* Line 156 */
+.loader {
+    animation: spin 2s linear infinite;
+}
+
+/* Line 157 */
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Line 158 */
+.badge {
+    padding: 10px;
+}
+
+/* Line 159 */
+.badge {
+    background-color: #2196F3;
+}
+
+/* Line 160 */
+.badge {
+    color: white;
+}
+
+/* Line 161 */
+.badge {
+    border-radius: 50%;
+}
+
+/* Line 162 */
+.badge {
+    position: absolute;
+}
+
+/* Line 163 */
+.badge {
+    top: 10px;
+}
+
+/* Line 164 */
+.badge {
+    right: 10px;
+}
+
+/* Line 165 */
+.avatar {
+    vertical-align: middle;
+}
+
+/* Line 166 */
+.avatar {
+    width: 50px;
+}
+
+/* Line 167 */
+.avatar {
+    height: 50px;
+}
+
+/* Line 168 */
+.avatar {
+    border-radius: 50%;
+}
+
+/* Line 169 */
+.breadcrumb {
+    list-style: none;
+}
+
+/* Line 170 */
+.breadcrumb {
+    overflow: hidden;
+}
+
+/* Line 171 */
+.breadcrumb {
+    background-color: #f3f3f3;
+}
+
+/* Line 172 */
+.breadcrumb li {
+    float: left;
+}
+
+/* Line 173 */
+.breadcrumb li a {
+    color: #0275d8;
+}
+
+/* Line 174 */
+.breadcrumb li a {
+    text-decoration: none;
+}
+
+/* Line 175 */
+.breadcrumb li a:hover {
+    text-decoration: underline;
+}
+
+/* Line 176 */
+.breadcrumb li+li:before {
+    padding: 8px;
+}
+
+/* Line 177 */
+.breadcrumb li+li:before {
+    color: black;
+}
+
+/* Line 178 */
+.breadcrumb li+li:before {
+    content: "/\00a0";
+}
+
+/* Line 179 */
+.pagination {
+    display: inline-block;
+}
+
+/* Line 180 */
+.pagination a {
+    color: black;
+}
+
+/* Line 181 */
+.pagination a {
+    float: left;
+}
+
+/* Line 182 */
+.pagination a {
+    padding: 8px 16px;
+}
+
+/* Line 183 */
+.pagination a {
+    text-decoration: none;
+}
+
+/* Line 184 */
+.pagination a:hover {
+    background-color: #ddd;
+}
+
+/* Line 185 */
+.pagination a.active {
+    background-color: #4CAF50;
+}
+
+/* Line 186 */
+.pagination a.active {
+    color: white;
+}
+
+/* Line 187 */
+.pagination a.active {
+    border-radius: 5px;
+}
+
+/* Line 188 */
+.pagination a.disabled {
+    color: #ddd;
+}
+
+/* Line 189 */
+.pagination a.disabled {
+    cursor: not-allowed;
+}
+
+/* Line 190 */
+.pagination a.disabled:hover {
+    background-color: transparent;
+}
+
+/* Line 191 */
+.pagination a.disabled:hover {
+    color: #ddd;
+}
+
+/* Line 192 */
+.pagination a.disabled:hover {
+    cursor: not-allowed;
+}
+
+/* Line 193 */
+.pagination a.disabled:hover {
+    border-radius: 5px;
+}
+
+/* Line 194 */
+.pagination a.disabled:hover {
+    background-color: transparent;
+}
+
+/* Line 195 */
+.pagination a.disabled:hover {
+    color: #ddd;
+}
+
+/* Line 196 */
+.pagination a.disabled:hover {
+    cursor: not-allowed;
+}
+
+/* Line 197 */
+.pagination a.disabled:hover {
+    border-radius: 5px;
+}
+
+/* Line 198 */
+.pagination a.disabled:hover {
+    background-color: transparent;
+}
+
+/* Line 199 */
+.pagination a.disabled:hover {
+    color: #ddd;
+}
+
+/* Line 200 */
+.pagination a.disabled:hover {
+    cursor: not-allowed;
+}
