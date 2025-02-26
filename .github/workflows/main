@@ -1,4 +1,4 @@
-name: Automated 13 Commits and PR
+name: Automated 13 Commits, PR, and Issue
 
 on:
   workflow_dispatch:
@@ -24,13 +24,15 @@ jobs:
           git checkout -b $BRANCH_NAME
           echo "BRANCH_NAME=$BRANCH_NAME" >> $GITHUB_ENV
 
-      - name: Make multiple commits with JS files
+      - name: Make multiple commits with various files
         run: |
           for i in {1..13}; do
-            filename="script-$(date +%Y%m%d-%H%M%S).js"
-            echo "// Js commit $i on $(date)" > $filename
+            EXT=("js" "py" "html" "css" "jsx")
+            RANDOM_EXT=${EXT[$RANDOM % ${#EXT[@]}]}
+            filename="file-$(date +%Y%m%d-%H%M%S).$RANDOM_EXT"
+            echo "// Auto-generated $RANDOM_EXT file $i on $(date)" > $filename
             git add $filename
-            git commit -m "java script commit $i - Added $filename"
+            git commit -m "$RANDOM_EXT commit $i - Added $filename"
             echo "Waiting for 30 seconds before next commit..."
             sleep 30
           done
@@ -39,9 +41,17 @@ jobs:
         run: |
           git push https://x-access-token:${{ secrets.PAT_TOKEN }}@github.com/mash021/JS.git $BRANCH_NAME
 
+      - name: Create Issue
+        run: |
+          ISSUE_TITLE="Automated Code Additions"
+          ISSUE_BODY="This issue tracks the automated addition of various code files including JS, Python, HTML, CSS, and React JSX."
+          gh issue create --title "$ISSUE_TITLE" --body "$ISSUE_BODY" --repo mash021/JS
+        env:
+          GH_TOKEN: ${{ secrets.PAT_TOKEN }}
+
       - name: Create Pull Request
         run: |
-          PR_URL=$(gh pr create --base main --head $BRANCH_NAME --title "Automated PR: $BRANCH_NAME" --body "This PR contains 13 automated commits.")
+          PR_URL=$(gh pr create --base main --head $BRANCH_NAME --title "Automated PR: $BRANCH_NAME" --body "This PR contains 13 automated commits adding HTML, CSS, JS, Python, and React files.")
           echo "Pull Request created: $PR_URL"
         env:
           GH_TOKEN: ${{ secrets.PAT_TOKEN }}
