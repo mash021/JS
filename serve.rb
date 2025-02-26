@@ -1,6 +1,6 @@
 # ai_example.rb - Simple Neural Network for XOR problem (2-2-1) using backpropagation
 #
-# This program demonstrates a basic AI model using only Ruby's standard library.
+
 #
 def sigmoid(x)
   1.0 / (1.0 + Math.exp(-x))
